@@ -12,7 +12,7 @@ export const Footer = () => {
       </a>
       <p className="text-sm text-muted-foreground">
         {" "}
-        &copy; {new Date().getFullYear()} kayliesrithanam.com All rights reserved.
+        &copy; {new Date().getFullYear()} Kaylie Srithanam
       </p>
 
     </footer>
