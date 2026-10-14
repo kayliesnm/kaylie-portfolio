@@ -1,4 +1,4 @@
-import { ArrowRight, ExternalLink } from "lucide-react";
+import { ArrowRight, ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
@@ -7,7 +7,8 @@ const projects = [
     description: "Android and IOS mobile application for tracking workout routines. Designed for coach/client interaction and geared for complex bodybuilding programming",
     image: "/projects/ml/i1.png",
     tags: ["Dart", "Flutter", "VS Code", "Firebase", "Figma",],
-    demoUrl: "#",
+    demoUrl: "https://github.com/kayliesnm/musclelogic",
+    githubUrl: "https://github.com/kayliesnm/musclelogic",
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const projects = [
     image: "/projects/mlgd/i1.png",
     tags: ["C#", "Unity", "Blender",],
     demoUrl: "https://www.youtube.com/watch?v=n0n08KBfRMc",
+    githubUrl: "https://github.com/kayliesnm/MyLittleGarden",
   },
   {
     id: 3,
@@ -23,7 +25,8 @@ const projects = [
     description: "A cross-platform social media application for Android, iOS, and desktop platforms designed specifically for dog and cat lovers to share photos within a pet-focused community",
     image: "/projects/ph/i1.png",
     tags: ["Dart", "Flutter", "VS Code",],
-    demoUrl: "#",
+    demoUrl: "https://github.com/kayliesnm/PawsHome",
+    githubUrl: "https://github.com/kayliesnm/PawsHome",
   },
 
 
@@ -80,19 +83,29 @@ export const ProjectsSection = () => {
                   >
                     <ExternalLink size={20} />
                   </a>
+                  <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                    >
+                      <Github size={20} />
+                    </a>
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* <div className="text-center mt-12">
+        <div className="text-center mt-12">
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
+            href="https://github.com/kayliesnm"
           >
+            Check My Github <ArrowRight size={16} />
+        
           </a>
-        </div> */}
+        </div>
       </div>
     </section>
   );
